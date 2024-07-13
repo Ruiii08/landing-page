@@ -369,3 +369,8 @@ body.active-popup .after-popup{
     outline: none;
     background-color: transparent;
 }
+#close:hover{
+    cursor: pointer;
+    font-size: 45px;
+    font-weight: bolder;
+}
