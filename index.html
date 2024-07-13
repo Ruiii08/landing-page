@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="query.css">
+</head>
+
+<body>
+    <div class="main">
+        <section id="nav-bar">
+            <nav id="fsc_nav"> <!-- full screen nav-->
+                <div class="logo"><img src="./assets/logo3.png" alt="shoe store logo"></div>
+                <div>
+                    <ul class="nav_links">
+                        <li><a href="#collection">Collection</a></li>
+                        <li><a href="#cart">Cart</a></li>
+                        <li><a href="#profile">Profile</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <nav id="ham_nav">
+                <div class="logo"><img src="./assets/logo3.png" alt="shoe store logo"></div>
+                <div class="ham_menu">
+                    <img src="./assets/bx-grid-alt.png" alt="menu icon" class="ham_icon" onclick="menu()">
+                    <div class="ham_links">
+                        <li><a href="#collection" onclick="menu()">Collection</a></li>
+                        <li><a href="#cart" onclick="menu()">Cart</a></li>
+                        <li><a href="#profile" onclick="menu()">Profile</a></li>
+                    </div>
+                </div>
+            </nav>
+        </section>
+        <div id="container">
+            <span class="letter">S</span>
+            <img name="slide">
+            <h4 class="text_left">POP </h4>
+            <h4 class="text_right">OLES</h4>
+            <button class="btn explore">EXPLORE MORE</button>
+            <button class="btn print">CUSTOM PRINTS</button>
+            <button class="btn catalog">CATALOG</button>
+            <h5 class="feature-1">Comfortable</h5>
+            <h5 class="feature-2">Unique Patterns</h5>
+            <h5 class="feature-3">Custom Artwork</h5>
+            <h5 class="feature-4">Eco-friendly</h5>
+            <footer class="footer">
+                <p>Copyright © 2024 Riya Sharma. All rights reserved.</p>
+                <div class="footer_links">
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">Twitter</a></li>
+                </div>
+            </footer>
+        </div>
+    </div>
+    <div class="popup">
+        <div class="butt"><button id="close">&times;</button></div>
+        <div class="image">
+            <img src="assets/back.png" alt="galaxy theme shoes">
+        </div>
+        <div class="text">
+            <h2>PopSoles</h2>
+            <h1>Get 10% Off</h1>
+            <p>When you sign up to recieve E-mails.</p>
+            <p>Exclusions Apply</p>
+            <input placeholder="abc@gmail.com" type="email" class="imp">
+            <button class="submit" onclick="toggle()">Submit</button>
+            <p>By providing my E-mail address, I agree to recieve brand emails and I agree to company's Terms Of Use
+                and Privacy Policy.</p>
+        </div>
+    </div>
+    <div class="after-popup">
+        <div class="butt"><button id="closed">&times;</button></div>
+        <h1>Hoorayy!!</h1>
+        <p>You have been rewarded with 10% discount. Please claim it at checkout.</p>
+    </div>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>
